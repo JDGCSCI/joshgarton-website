@@ -6,8 +6,8 @@ $(document).ready(function() {
     var scrollLinks = $(".scroll");
     var navLinks = $(".nav-link");
 
-	// Updates the navbar to the correct section on page refresh
-	var scrollBarLocation = $(this).scrollTop();
+    // Updates the navbar to the correct section on page refresh
+    var scrollBarLocation = $(this).scrollTop();
 
     // Sets the active nav link when the page is refreshed
     navLinks.each(function() {
@@ -19,7 +19,7 @@ $(document).ready(function() {
         }
     })
 	
-	// Adds the ease scrolling effect to different sections 
+    // Adds the ease scrolling effect to different sections 
     scrollLinks.click(function(e) {
         e.preventDefault();
 

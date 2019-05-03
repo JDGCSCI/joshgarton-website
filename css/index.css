@@ -1,0 +1,238 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 68px;
+}
+
+#home {
+    height: 100vh;
+    background:-webkit-gradient(linear, left top, left bottom, from(rgba(22,22,22,.1)), color-stop(75%, rgba(22,22,22,.5)), to(#161616)), url("../images/nashville_skyline.jpg");
+    background:linear-gradient(to bottom, rgba(22,22,22,.1) 0, rgba(22,22,22,.5) 50%, #161616 100%), url("../images/nashville_skyline.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#about, #skills, #resume, #contact {
+    min-height: 100vh;
+    background:-webkit-gradient(linear, left top, left bottom, from(rgba(22,22,22,.2)), color-stop(50%, rgba(22,22,22,.5)), to(rgba(22,22,22,.8)));
+    background: linear-gradient(to bottom, rgba(22,22,22,.2) 0, rgba(22,22,22,.5) 50%, rgba(22,22,22,.8) 100%);
+}
+
+li.active > a {
+    background-color: transparent !important;
+    border-bottom: 1px solid #f8f9fa;
+}
+
+.nav-link {
+    font-size: 20px;
+}
+
+.home-border {
+    border: 6px solid #f8f9fa;
+    border-radius: 10px;
+}
+
+hr {
+    background-color: #f8f9fa;
+}
+
+#about p {
+    font-size: 20px;
+}
+
+.sticker {
+    margin: 5px;
+}
+
+.skill-cpp .sticker-img {
+    background-image: url("../images/skills/cpp.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+}
+
+.skill-csharp .sticker-img {
+    background-image: url("../images/skills/csharp.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+}
+
+.skill-java .sticker-img {
+    background-image: url("../images/skills/java.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+}
+
+.skill-python .sticker-img {
+    background-image: url("../images/skills/python.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+}
+
+.skill-html .sticker-img {
+    background-image: url("../images/skills/html.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+}
+
+.skill-css .sticker-img {
+    background-image: url("../images/skills/css.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+}
+
+.skill-linux .sticker-img {
+    background-image: url("../images/skills/linux.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+}
+
+.skill-js .sticker-img {
+    background-image: url("../images/skills/js.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+}
+
+.skill-android .sticker-img {
+    background-image: url("../images/skills/android.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+}
+
+.skill-sql .sticker-img {
+    background-image: url("../images/skills/sql.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+}
+
+.skill-c .sticker-img {
+    background-image: url("../images/skills/c.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+}
+
+.skill-windows .sticker-img {
+    background-image: url("../images/skills/windows.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+}
+
+/* Animated Hamburger Icon CSS */
+.animated-button-icon {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+    
+.animated-button-icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.animated-button-icon span {
+    background: #f8f9fa;
+}
+
+.animated-button-icon span:nth-child(1) {
+    top: 0px;
+}
+    
+.animated-button-icon span:nth-child(2), .animated-button-icon span:nth-child(3) {
+    top: 10px;
+}
+    
+.animated-button-icon span:nth-child(4) {
+    top: 20px;
+}
+    
+.animated-button-icon.open span:nth-child(1) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+}
+    
+.animated-button-icon.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+    
+.animated-button-icon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+    
+.animated-button-icon.open span:nth-child(4) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+}
+
+@media (max-width: 768px) {
+    li.active > a {
+        border-bottom: none;
+    }
+	
+	#me {
+		margin-bottom: 20px;
+    }
+
+    #home {
+        background-attachment: scroll;
+    }
+
+    .skill-sticker {
+        width: 170px;
+        height: 170px;
+    }
+}

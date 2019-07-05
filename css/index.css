@@ -13,7 +13,7 @@ body {
     background-size: cover;
 }
 
-#about, #skills, #resume, #contact {
+#about, #skills, #portfolio, #resume, #contact {
     min-height: 100vh;
     background:-webkit-gradient(linear, left top, left bottom, from(rgba(22,22,22,.2)), color-stop(50%, rgba(22,22,22,.5)), to(rgba(22,22,22,.8)));
     background: linear-gradient(to bottom, rgba(22,22,22,.2) 0, rgba(22,22,22,.5) 50%, rgba(22,22,22,.8) 100%);

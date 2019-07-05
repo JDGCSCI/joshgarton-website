@@ -35,6 +35,7 @@
                             <li class="nav-item active mr-3"><a class="nav-link scroll" href="#home">Home</a></li>
                             <li class="nav-item mr-3"><a class="nav-link scroll" href="#about">About</a></li>
                             <li class="nav-item mr-3"><a class="nav-link scroll" href="#skills">Skills</a></li>
+                            <li class="nav-item mr-3"><a class="nav-link scroll" href="#portfolio">Portfolio</a></li>
                             <li class="nav-item mr-3"><a class="nav-link scroll" href="#resume">Resume</a></li>
                             <li class="nav-item"><a class="nav-link scroll" href="#contact">Contact</a></li>
                         </ul>
@@ -77,6 +78,7 @@
                             <p>From a young age I developed a passion for computers, computer programming, and technology in general. I have always known that I would like to pursue a career in Computer Science, and that day has finally come.</p>
                             <p>I am an Eagle Scout with countless hours of community service and I have received several academic awards while attending Middle Tennessee State University.</p>
                             <p>Thank you for visiting my website. You can check out some of my skills and view my resume below. Feel free to connect with me on LinkedIn or look at some of my work on GitHub. You can also leave me a message and I will respond to you as soon as possible.</p>
+                            <p class="text-right"><a class="text-light" href="https://www.linkedin.com/in/joshua-garton-400217185/" target="_blank"><i class="fab fa-linkedin fa-3x mr-1"></i> Connect with me!</a></p>
                         </div>
                     </div>
                 </div>
@@ -144,9 +146,132 @@
             </div>
         </section>
 
-        <section class="text-light" id="resume">
+        <section id="portfolio">
             <div class="container overflow-hidden">
                 <div class="jumbotron pt-2 bg-dark overflow-hidden mt-4 pb-4">
+                    <h1 class="display-2 text-light text-center">My Portfolio</h1>
+                    <hr class="mb-5">
+
+                    <h5 class="text-light mb-4">Note: The following projects come from assignments during my undergraduate studies. Therefore, I have avoided placing them on GitHub and I have made these files hidden from web crawlers to prevent plagiarism.</h5>
+
+                    <div id="accordion">
+                        <div class="card border-dark bg-light">
+                            <div class="card-header border-dark">
+                                <a class="card-link text-dark h3" data-toggle="collapse" data-parent="#accordion" href="#astar">C++ - Artificial Intelligence - A* Algorithm</a>
+                            </div>
+
+                            <div id="astar" class="collapse">
+                                <div class="card-body">
+                                    <h4 class="font-weight-bold">Description</h4>
+                                    <p>The <a href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="_blank">A* search algorithm</a> is one of the most popular techniques used in pathfinding and graph traversal. In this project, I use this algorithm to solve the <a href="https://en.wikipedia.org/wiki/15_puzzle" target="_blank">8-puzzle problem</a> in the lowest number of moves. More information about this project can be found in the project report.</p>
+
+                                    <h4 class="font-weight-bold">Code</h4>
+                                    <ul>
+                                        <li><a href="code/astar/state.cpp" target="_blank">state.cpp</a></li>
+                                        <li><a href="code/astar/state.h" target="_blank">state.h</a></li>
+                                        <li><a href="code/astar/a-star.cpp" target="_blank">a-star.cpp</a></li>
+                                        <li><a href="code/astar/report.pdf" target="_blank">report.pdf</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-dark bg-light">
+                            <div class="card-header border-dark">
+                                <a class="card-link text-dark h3" data-toggle="collapse" data-parent="#accordion" href="#id3">C++ - Artificial Intelligence - ID3 Decision Tree</a>
+                            </div>
+
+                            <div id="id3" class="collapse">
+                                <div class="card-body">
+                                    <h4 class="font-weight-bold">Description</h4>
+                                    <p><a href="https://en.wikipedia.org/wiki/Decision_tree_learning" target="_blank">Decision tree learning</a> is a <a href="https://en.wikipedia.org/wiki/Supervised_learning" target="_blank">supervised machine learning</a> technique that can be used to predict values by deriving decision rules from an existing data set. In this project, I implement the <a href="https://en.wikipedia.org/wiki/ID3_algorithm" target="_blank">ID3 algorithm</a> to construct a decision tree from a set of training data which can be used to classify new examples.</p>
+
+                                    <h4 class="font-weight-bold">Code</h4>
+                                    <ul>
+                                        <li><a href="code/id3/ID3DecisionTree.cpp" target="_blank">ID3DecisionTree.cpp</a></li>
+                                        <li><a href="code/id3/ID3DecisionTree.h" target="_blank">ID3DecisionTree.h</a></li>
+                                        <li><a href="code/id3/id3.cpp" target="_blank">id3.cpp</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-dark bg-light">
+                            <div class="card-header border-dark">
+                                <a class="card-link text-dark h3" data-toggle="collapse" data-parent="#accordion" href="#kmeans">C++ - Artificial Intelligence - K-Means Clustering</a>
+                            </div>
+
+                            <div id="kmeans" class="collapse">
+                                <div class="card-body">
+                                    <h4 class="font-weight-bold">Description</h4>
+                                    <p><a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">Cluster analysis</a> is an <a href="https://en.wikipedia.org/wiki/Unsupervised_learning" target="_blank">unsupervised machine learning</a> technique that can be used to predict values by analyzing an existing data set and grouping the data into clusters that share similar properties. In this project I implement the <a href="https://en.wikipedia.org/wiki/K-means_clustering" target="_blank">K-means clustering algorithm</a> to create clusters from a set of training data which can be used to classify new examples. More information about this project can be found in the project report.</p>
+
+                                    <h4 class="font-weight-bold">Code</h4>
+                                    <ul>
+                                        <li><a href="code/kmeans/DataPoint.h" target="_blank">DataPoint.h</a></li>
+                                        <li><a href="code/kmeans/Centroid.cpp" target="_blank">Centroid.cpp</a></li>
+                                        <li><a href="code/kmeans/Centroid.h" target="_blank">Centroid.h</a></li>
+                                        <li><a href="code/kmeans/Cluster.cpp" target="_blank">Cluster.cpp</a></li>
+                                        <li><a href="code/kmeans/Cluster.h" target="_blank">Cluster.h</a></li>
+                                        <li><a href="code/kmeans/KMeansClusteringClassifier.cpp" target="_blank">KMeansClusteringClassifier.cpp</a></li>
+                                        <li><a href="code/kmeans/KMeansClusteringClassifier.h" target="_blank">KMeansClusteringClassifier.h</a></li>
+                                        <li><a href="code/kmeans/kmeans.cpp" target="_blank">kmeans.cpp</a></li>
+                                        <li><a href="code/kmeans/report.pdf" target="_blank">report.pdf</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-dark bg-light">
+                            <div class="card-header border-dark">
+                                <a class="card-link text-dark h3" data-toggle="collapse" data-parent="#accordion" href="#gamejam">Java - Android Application - Game Jam</a>
+                            </div>
+
+                            <div id="gamejam" class="collapse">
+                                <div class="card-body">
+                                    <h4 class="font-weight-bold">Description</h4>
+                                    <p>“Game Jam” is an android application that I helped create in my Java class at MTSU. I was the project leader of a group that included two other students and I put a lot of work into this application. More information about this application can be found in the documentation and video below.</p>
+
+                                    <h4 class="font-weight-bold">Documentation</h4>
+                                    <ul>
+                                        <li><a href="code/gamejam/GameJamDocumentation.pdf" target="_blank">GameJamDocumentation.pdf</a></li>
+                                    </ul>
+
+                                    <h4 class="font-weight-bold">Video</h4>
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hSAzbrXWrv8" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-dark bg-light">
+                            <div class="card-header border-dark">
+                                <a class="card-link text-dark h3" data-toggle="collapse" data-parent="#accordion" href="#db">C# - Database - Simple Database Application</a>
+                            </div>
+
+                            <div id="db" class="collapse">
+                                <div class="card-body">
+                                    <h4 class="font-weight-bold">Description</h4>
+                                    <p>This is a simple database application I created for my Database class at MTSU. It is a .NET application that can easily interact with its database using <a href="https://en.wikipedia.org/wiki/Entity_Framework" target="_blank">Entity Framework</a>. A demo of the project can be found in the video below.</p>
+
+                                    <h4 class="font-weight-bold">Video</h4>
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cIa0H0XG6yM" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-right mt-4 h4"><a class="text-light" href="https://github.com/JDGCSCI" target="_blank"><i class="fab fa-github fa-3x mr-1"></i> Check out my GitHub!</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-light" id="resume">
+            <div class="container overflow-hidden">
+                <div class="jumbotron pt-2 bg-dark overflow-hidden mt-4 pb-5">
                     <h1 class="display-2 text-center">My Resume</h1>
                     <hr class="mb-5">
 
@@ -159,31 +284,10 @@
 
         <section class="text-light" id="contact">
             <div class="container overflow-hidden">
-                <div class="jumbotron pt-2 bg-dark overflow-hidden mt-4 pb-4">
-                    <h1 class="display-2 text-center">Find Me</h1>
-                    <hr class="mb-5">
-
-                    <div class="container">
-                        <div class="row text-center">
-                            <div class="col-4">
-                                <a href="https://www.linkedin.com/in/joshua-garton-400217185/" target="_blank" class="d-inline-block animated pulse infinite"><img class="img-fluid" src="images/linkedin.png" alt="LinkedIn"></a>
-                            </div>
-
-                            <div class="col-4">
-                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=joshua.d.garton@gmail.com" target="_blank" class="d-inline-block animated pulse infinite"><img class="img-fluid" src="images/gmail.png" alt="Gmail"></a>
-                            </div>
-
-                            <div class="col-4">
-                                <a href="https://github.com/JDGCSCI" target="_blank" class="d-inline-block animated pulse infinite"><img class="img-fluid" src="images/github.png" alt="GitHub"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="jumbotron pt-2 bg-dark overflow-hidden mt-4 pb-4">
+                <div class="jumbotron pt-2 bg-dark overflow-hidden mt-4 pb-5">
                     <h1 class="display-2 text-center">Contact Me</h1>
                     <hr class="mb-5">
-                            
+
                     <form id="contactForm" action="php/contact.php" method="POST">
                         <div class="form-group">
                             <label for="nameInput">Name:</label>
@@ -250,7 +354,7 @@
             </div>
         </section>    
         
-        <footer class="text-center text-light bg-dark">Copyright © Joshua Garton 2019 | joshua.d.garton@gmail.com</footer>
+        <footer class="text-center text-light bg-dark">Copyright &copy Joshua Garton 2019 | joshua.d.garton@gmail.com</footer>
 
         <!-- Scripts -->
         <!-- Bootstrap Core -->
